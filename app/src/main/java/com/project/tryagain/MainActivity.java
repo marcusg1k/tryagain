@@ -22,7 +22,6 @@ public class MainActivity extends AppCompatActivity {
 
             TextView welcomeText = findViewById(R.id.welcomeText);
             EditText nameInput = findViewById(R.id.nameInput);
-            EditText weightInput = findViewById(R.id.weightInput);
             EditText daysInput = findViewById(R.id.daysInput);
             EditText goalWeightInput = findViewById(R.id.goalWeightInput);
 

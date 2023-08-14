@@ -27,19 +27,11 @@
         android:layout_marginTop="20dp"/>
 
     <EditText
-        android:id="@+id/weightInput"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Weight"
-        android:layout_below="@id/nameInput"
-        android:layout_marginTop="20dp"/>
-
-    <EditText
         android:id="@+id/daysInput"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Amount of days per week with activity"
-        android:layout_below="@id/weightInput"
+        android:layout_below="@id/nameInput"
         android:layout_marginTop="20dp"/>
 
     <EditText
