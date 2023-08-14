@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:text="Welcome to our Calorie Tracker App"
         android:textSize="23dp"
-        android:textColor="#FF1C6C"
+        android:textColor="#AF92FF"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="16dp"/>
 
@@ -24,7 +24,7 @@
         android:layout_height="wrap_content"
         android:hint="Name"
         android:layout_below="@id/welcomeText"
-        android:layout_marginTop="16dp"/>
+        android:layout_marginTop="20dp"/>
 
     <EditText
         android:id="@+id/weightInput"
@@ -32,23 +32,15 @@
         android:layout_height="wrap_content"
         android:hint="Weight"
         android:layout_below="@id/nameInput"
-        android:layout_marginTop="8dp"/>
-
-    <EditText
-        android:id="@+id/ageInput"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Age"
-        android:layout_below="@id/weightInput"
-        android:layout_marginTop="8dp"/>
+        android:layout_marginTop="20dp"/>
 
     <EditText
         android:id="@+id/daysInput"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Amount of days per week with activity"
-        android:layout_below="@id/ageInput"
-        android:layout_marginTop="8dp"/>
+        android:layout_below="@id/weightInput"
+        android:layout_marginTop="20dp"/>
 
     <EditText
         android:id="@+id/goalWeightInput"
@@ -56,16 +48,15 @@
         android:layout_height="wrap_content"
         android:hint="Goal Weight"
         android:layout_below="@id/daysInput"
-        android:layout_marginTop="8dp"/>
+        android:layout_marginTop="20dp"/>
     <Button
         android:id="@+id/openFoodListButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Open Food List"
+        android:text="START"
         android:layout_below="@id/goalWeightInput"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="16dp"/>
-
+        android:layout_marginTop="20dp"/>
 
 
 </RelativeLayout>
