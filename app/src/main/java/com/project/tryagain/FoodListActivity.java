@@ -13,11 +13,11 @@ import android.widget.Toast;
 public class FoodListActivity extends AppCompatActivity {
 
     private ListView foodListView;
-    private TextView totalCaloriesTextView;
+    private TextView totalCaloriesTextView; // Total calories
     private EditText consumedFoodEditText;
     private Button calculateButton;
 
-    private String[] foods = {
+    private String[] foods = { // long list of basic foods
             "Apple (52 calories)",
             "Banana (96 calories)",
             "Orange (62 calories)",
@@ -76,7 +76,7 @@ public class FoodListActivity extends AppCompatActivity {
             "Peanuts (166 calories per 1/4 cup)"
     };
 
-    private int totalCalories = 0;
+    private int totalCalories = 0; // shown output
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -98,7 +98,6 @@ public class FoodListActivity extends AppCompatActivity {
             }
         });
     }
-
     private void calculateTotalCalories() {
         String consumedFood = consumedFoodEditText.getText().toString();
         for (String food : foods) {
@@ -109,9 +108,8 @@ public class FoodListActivity extends AppCompatActivity {
         }
         totalCaloriesTextView.setText("Total Calories: " + totalCalories);
     }
-
     private int getCaloriesFromFood(String food) {
-        String[] parts = food.split(" ");
+        String[] parts = food.split("");
         return Integer.parseInt(parts[parts.length - 2]);
     }
 }

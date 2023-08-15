@@ -20,12 +20,12 @@ public class MainActivity extends AppCompatActivity {
 
             getWindow().getDecorView().setBackgroundColor(getResources().getColor(R.color.badge));
 
-            TextView welcomeText = findViewById(R.id.welcomeText);
-            EditText nameInput = findViewById(R.id.nameInput);
-            EditText daysInput = findViewById(R.id.daysInput);
-            EditText goalWeightInput = findViewById(R.id.goalWeightInput);
+            TextView welcomeText = findViewById(R.id.welcomeText); // introduce to app
+            EditText nameInput = findViewById(R.id.nameInput); // name input tab
+            EditText daysInput = findViewById(R.id.daysInput); // days active tab
+            EditText goalWeightInput = findViewById(R.id.goalWeightInput); // goal weight tab
 
-            Button openFoodListButton = findViewById(R.id.openFoodListButton);
+            Button openFoodListButton = findViewById(R.id.openFoodListButton); // refers to food list
             openFoodListButton.setOnClickListener(new View.OnClickListener() {
                 public void onClick(View v) {
                     try {
@@ -37,10 +37,8 @@ public class MainActivity extends AppCompatActivity {
                 }
             });
         } catch (Exception e) {
-            Toast.makeText(this, "ERROR", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "", Toast.LENGTH_SHORT).show();
         }
     }
 }
-
-
 // exception handling implemented at end of code
